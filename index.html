@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <p>N🚶V E E N</p>
+            </div>
+            <div class="nav-content">
+                <ul class="nav-list">
+                    <li class="nav-items"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-items"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-items"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-items"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-items"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="thinker">
+                <input type="checkbox" id="darkmode-toggle">
+                <label class="toggle-button" for="darkmode-toggle">
+                    <svg width="50px" height="50px" class="sunImg" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.28451 10.3333C7.10026 10.8546 7 11.4156 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C11.4156 7 10.8546 7.10026 10.3333 7.28451"
+                            stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M12 2V4" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M12 20V22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M4 12L2 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M22 12L20 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M19.7778 4.22266L17.5558 6.25424" stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M4.22217 4.22266L6.44418 6.25424" stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M6.44434 17.5557L4.22211 19.7779" stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M19.7778 19.7773L17.5558 17.5551" stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+
+                    <svg width="50px" height="50px" class="moonImg" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+                            stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+
+                </label>
+
+            </div>
+
+        </nav>
+
+        <nav class="secondary-container">
+
+            <div class="secondary-second-container">
+                <div class="secondary-content">
+                    <div class="secondary-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="secondary-list">
+                        <ul>
+                            <li class="nav-items2 active2">
+                                <a href="#home" class="nav-link2" onclick="toggleMenu()">Home</a>
+                            </li>
+                            <li class="nav-items2">
+                                <a href="#about" class="nav-link2" onclick="toggleMenu()">About</a>
+                            </li>
+                            <li class="nav-items2">
+                                <a href="#skills" class="nav-link2" onclick="toggleMenu()">Skills</a>
+                            </li>
+                            <li class="nav-items2">
+                                <a href="#projects" class="nav-link2" onclick="toggleMenu()">Projects</a>
+                            </li>
+                            <li class="nav-items2">
+                                <a href="#contact" class="nav-link2" 890- onclick="toggleMenu()">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="thinker">
+                <input type="checkbox" id="darkmode-toggle2">
+                <label class="toggle-button" for="darkmode-toggle2">
+                    <svg width="50px" height="50px" class="sunImg" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.28451 10.3333C7.10026 10.8546 7 11.4156 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C11.4156 7 10.8546 7.10026 10.3333 7.28451"
+                            stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M12 2V4" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M12 20V22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M4 12L2 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M22 12L20 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M19.7778 4.22266L17.5558 6.25424" stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M4.22217 4.22266L6.44418 6.25424" stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M6.44434 17.5557L4.22211 19.7779" stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M19.7778 19.7773L17.5558 17.5551" stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+
+                    <svg width="50px" height="50px" class="moonImg" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+                            stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+
+
+                </label>
+            </div>
+
+        </nav>
+
+
+        <section id="home" class="hero-section section">
+
+
+            <div class="bg"></div>
+
+            <div class="section_text">
+
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title">NaveenKumar</h1>
+                <p class="section_text_p2"><small>Full-time</small>Frontened Dev<em>/</em><small>part-time</small>
+                    Backend Dev</p>
+
+                <div class="social-container">
+                    <i class="fa-brands fa-linkedin" class="icon" style="margin-right: 10px;"
+                        onclick="location.href='https://www.linkedin.com/in/naveen-kumar-06606422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"></i>
+
+                    <i class="fa-brands fa-github" class="icon"
+                        onclick="location.href='https://github.com/naveenkumar-sd' "></i>
+                </div>
+
+            </div>
+
+
+
+            <div class="section_pic_container">
+                <img src="navi-profile.jpg" alt="profile picture" width="400px">
+            </div>
+
+        </section>
+    </header>
+
+    <hr>
+
+    <section id="about" class="section">
+        <p class="title_top">About</p>
+        <div class="about_main_content">
+            <div class="about_pic_container">
+                <img src="b & w 2.jpg" alt="profile picture 2" width="400px">
+            </div>
+            <div class="about_text_container">
+                <div class="edu_container">
+                    <img src="education (2).png" alt="education logo" width="30px">
+                    <p>Education</p>
+                    <h3>B.E Bachelor Degree</h3>
+                </div>
+                <div class="about_description_container">
+                    <p>
+                        "As a web developer, I craft digital experiences by leveraging my expertise in programming languages such as HTML, CSS, and JavaScript. I am proficient in designing and implementing responsive, user-friendly websites that meet the needs of clients. 
+                        My abilities cover the entire gambit of web development, from front-end development, where I guarantee a fluid and visually stunning user interface, to back-end coding for reliable functionality. 
+                        I combine knowledge of technology with creativity to make concepts come to life online. I also have a keen sense of design, a solid understanding of several frameworks and libraries, and a dedication to staying current with industry developments."
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+    <section id="skills" class="section">
+        <p class="title_top">Skills</p>
+        <div class="frontend_skills">
+            <h2 class="skills-sub-title">Frontened Skills</h2>
+            <div class="skills_box">
+                <article>
+                    <img src="html.png" alt="HTML logo " class="skills_icon">
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="css.png" alt="CSS logo " class="skills_icon">
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="bootstrap.png" alt="Bootstrap logo " class="skills_icon">
+                    <div>
+                        <h3>Bootstrap</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="js.png" alt="javascript logo " class="skills_icon">
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="react.png" alt="react logo " class="skills_icon">
+                    <div>
+                        <h3>React</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="git.png" alt="git logo " class="skills_icon">
+                    <div>
+                        <h3>Git</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="backend_skills">
+            <h2 class="skills-sub-title">Backend Skills</h2>
+            <div class="skills_box">
+
+                <article>
+                    <img src="MySQl.png" alt="MySQL logo " class="skills_icon">
+                    <div>
+                        <h3>MySQL</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="php.png" alt="CSS logo " class="skills_icon">
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <hr>
+
+
+    <section id="projects" class="section">
+        <p class="title_top">Projects</p>
+        <div class="projects_container">
+            <div class="card">
+                <div class="carousel">
+                    <div class="image-container" id="imgs">
+                        <img src="pg 1.png" alt="first-image" width="300px" />
+                        <img src="pg 2.png" alt="first-image" width="300px" style="filter: grayscale(20%);" />
+                        <img src="pg 3.png" alt="first-image" width="300px" style="filter: grayscale(40%);" />
+                        <img src="pg 4.png" alt="first-image" width="300px" style="filter: grayscale(80%);" />
+                        <img src="pg 5.png" alt="first-image" width="300px" style="filter: grayscale(80%);" />
+                        <img src="pg 6.png" alt="first-image" width="300px" style="filter: grayscale(100%);" />
+
+
+                    </div>
+
+                    <div class="buttons-container">
+                        <button id="left" class="btn">Prev</button>
+                        <button id="right" class="btn">Next</button>
+                    </div>
+                </div>
+
+                <div class="card_content">
+                    <h2>PG life</h2>
+                    <button class="card_btn"
+                        onclick="location.href='https://github.com/naveenkumar-sd/PG-Life.git'">GitHub</button>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="carousel">
+                    <div class="image-container" id="imgs">
+
+                        <img src="50 days projects.png" alt="fourth-image" width="300px" />
+                    </div>
+                </div>
+
+                <div class="card_content">
+                    <h2>50-days project</h2>
+                    <button class="card_btn"
+                        onclick="location.href='https://github.com/naveenkumar-sd/50-Projects.git' ">GitHub</button>
+                </div>
+            </div>
+
+
+
+
+
+    </section>
+
+
+    <hr>
+
+    <section id="contact" class="section">
+
+        <h1 class="title_top">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <i class="fa-solid fa-envelope" class="icon contact-icon"></i>
+                <p><a href="mailto:naveenxofficial@gmail.com">naveenxofficial@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <i class="fa-brands fa-linkedin" class="icon contact-icon"
+                    onclick="location.href='https://www.linkedin.com/in/naveen-kumar-06606422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"></i>
+                <p><a href='#'>LinkedIn</a></p>
+            </div>
+
+
+        </div>
+        <div class="contact-social-containers">
+
+
+            <li class="social-links"> <i class="fa-brands fa-github" class="icon contact-icon"
+                    onclick="location.href='https://github.com/naveenkumar-sd' "></i>
+            </li>
+
+            <li class="social-links"> <i class="fa-brands fa-discord" class="icon contact-icon"
+                    onclick="location.href='https://discord.com/invite/nhw3mmvQ' "></i>
+            </li>
+
+            <li class="social-links"> <i class="fa-brands fa-whatsapp" class="icon contact-icon"
+                    onclick="location.href='tel:733-956-1798' "></i></li>
+
+
+        </div>
+
+        <div class="footer-content">
+            <p>Copyright © 2024 Naveen. All rights reserved</p>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <script src="script.js ">
+
+
+    </script>
+
+
+
+</body>
+
+</html>
